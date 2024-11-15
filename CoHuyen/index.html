@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lời chúc gửi thầy cô</title>
+    <link rel="icon" type="image/x-icon" href="Van1.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="body">
+        <div id="textbox">
+            <p id="title">Gửi cô,</p>
+            <img id="thaykien" src="CoHuyen.jpg" alt="AnhCoHuyen">
+            <p id="wish">Nhân dịp kỷ niệm Ngày Nhà giáo Việt Nam 20/11, 
+                con xin gửi lời cảm ơn chân thành nhất đến thầy vì đã dẫn dắt chúng con tiến gần hơn đến với kiến thức. 
+                Chúc luôn dồi dào sức khoẻ và nhiều niềm vui để tiếp tục mang đến cho các lớp họp trò những bài học bổ ích.
+            </p>
+            <video controls>
+                <source src="videoplayback.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+        </div>  
+    </div>
+    <div class="backgroundimage"></div>
+</body>
+
+<style>
+    video
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
+        width: 80%;
+    }
+    #thaykien
+    {
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        border-width: 5%;
+        border: 5px solid #e1dccd;
+    }
+    #body
+    {
+        z-index: 99;
+        position: relative;
+    }
+    #title
+    {
+        font-family: "Ballet", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 300%;
+        font-style: normal;
+        color: #e1dccd;
+        text-align: center;
+        margin-top: 0;
+    }
+    #wish
+    {
+        font-size: 120%;
+        font-style: normal;
+        color: #e1dccd;
+        margin: 10%;
+        font-family: "Bodoni Moda", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+    }
+    #textbox
+    {
+        background-color: rgba(25, 38, 13, 0.7);
+        border-radius: 25px;
+        margin-left: 10%;
+        margin-right: 10%;
+        overflow:auto;
+    }
+    #body:before {
+        content: "";
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background-image: url("background.jpg");
+        filter: blur(3px);
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+</html>
